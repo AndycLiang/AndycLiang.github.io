@@ -1,11 +1,13 @@
 .pageHeader {
     color: black;
     text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
   
 .pageBodyContainer {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 5%;
+    padding-right: 5%;
     max-width: 80%;
     min-width: 80%;
     background-color: white;
@@ -20,9 +22,9 @@
 }
 
 .attendenceForm {
-    max-width: 500px;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -30,12 +32,12 @@
 }
 
 .formGroup {
-    margin-bottom: 15px;
+    margin-bottom: 2.5%;
 }
 
 .formLabel {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1%;
     font-weight: bold;
 
 }
@@ -50,7 +52,7 @@
 
 .formSubmit {
     width: 100%;
-    padding: 10px;
+    padding: 2.5%;
     background-color: #4CAF50;
     border: none;
     border-radius: 4px;
@@ -64,9 +66,9 @@
   }
 
 .notification {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 10px;
+    max-width: 80%;
+    margin: 5% auto;
+    padding: 1.5%;
     background-color: #dff0d8;
     color: #3c763d;
     border: 1px solid #d6e9c6;
@@ -77,12 +79,12 @@
   }
 
   .errorNotification {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #f0d8d8;
-    color: #763c3c;
-    border: 1px solid #e9c6c6;
+    max-width: 80%;
+    margin: 5% auto;
+    padding: 1.5%;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
     border-radius: 4px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -127,12 +129,12 @@
   }
   
   .pageBodyBed {
-    padding: 20px;
+    padding: 2.5%;
   }
   
   .pageBodyContainer {
     background: #f8f9fa;
-    padding: 20px;
+    padding: 2.5%;
     border-radius: 8px;
   }
   
@@ -143,8 +145,8 @@
   }
 
   .pageBody {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
