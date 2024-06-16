@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 10px;
     background-color: rgb(217, 55, 55);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .navPage {

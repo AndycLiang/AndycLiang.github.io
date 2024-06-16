@@ -61,7 +61,9 @@ const Attendance = () => {
     <div className = 'pageBodyBed'>
       <div className = 'pageBodyContainer'>
         <h1 className='pageHeader'>Attendance Form: {month}/{day}/{year}</h1>
-        <p>Club attendence for money!</p>
+        <p className='pageBody'>We are lucky to be sponsored by a bridge enthusiast, who rewards regular members with $15 per meeting for attendance!
+          Fill out the form below at the beginning of each meetings
+        </p>
 
         {submitted ? (
           <div className='notification'>Form submitted successfully!</div>
