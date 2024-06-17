@@ -3,22 +3,22 @@
     flex-direction: row;
     border: 1px solid black;
     justify-content: center;
-    padding: 10px;
+    padding: 1%;
     background-color: rgb(217, 55, 55);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .navPage {
-    margin: 30px;
+    margin: 3%;
 }
 
 .navPageLink {
-    font-size: 20px;
+    font-size: 1.4vw;
     color: rgb(232, 232, 232);
     font-weight: bold;
-    border: 3px solid transparent;
+    border: 0.4w solid transparent;
     transition: border-color 0.5s ease;
-    padding: 20px;
+    padding: 0.5vw;
 }
 
 .navPageLink:hover {

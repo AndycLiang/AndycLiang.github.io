@@ -156,7 +156,8 @@
     justify-content: center;
   }
   
-  .image {
+  .selfieImage {
+    min-width: 60%;
     max-width: 100%;
     height: auto;
   }
