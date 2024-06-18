@@ -40,7 +40,9 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Meetings</h5>
                   <p className="card-text">Meeting times and location to be decided for Fall 2024</p>
-                 
+                  <p className="card-text">&nbsp;&nbsp;</p>
+                  <p className="card-text"></p>
+
                 </div>
               </div>
             </div>
@@ -50,6 +52,8 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Special Events</h5>
                   <p className="card-text">To be decided for Fall 2024</p>
+                  <p className="card-text">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                  <p className="card-text">&nbsp;&nbsp;&nbsp;&nbsp;</p>
                   
                 </div>
               </div>
