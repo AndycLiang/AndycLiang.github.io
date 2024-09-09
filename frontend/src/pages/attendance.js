@@ -10,12 +10,13 @@ const Attendance = () => {
     event.preventDefault();
 
     const actualDay = new Date();
-    actualDay.setDate(actualDay.getDate() + 1);
-    actualDay.setHours(actualDay.getHours() - 2);
+    // actualDay.setDate(actualDay.getDate() + 1);
+    // actualDay.setHours(actualDay.getHours() - 2);
 
     if (
-      actualDay.getDay() !== 0 &&
-      (actualDay.getHours() < 14 || actualDay.getHours() > 16)
+      actualDay.getDay() !== 0 ||
+      actualDay.getHours() < 13 ||
+      actualDay.getHours() > 16
     ) {
       setError(true);
       setTimeout(() => setError(false), 3000);
@@ -23,11 +24,17 @@ const Attendance = () => {
       // alert(`${firstName} ${lastName} ${computingID}`);
       // console.log(`${firstName} ${lastName} ${computingID}`);
       try {
-        const response = await Axios.post("http://127.0.0.1:8000/api/log/", {
-          firstName,
-          lastName,
-          computingID,
-        });
+        // console.log(actualDay);
+        // console.log(actualDay.getDay());
+        // console.log(actualDay.getHours() < 13);
+        const response = await Axios.post(
+          "http://172.25.120.206:8000/api/log/",
+          {
+            firstName,
+            lastName,
+            computingID,
+          }
+        );
 
         setSubmitted(true);
 
@@ -66,7 +73,7 @@ const Attendance = () => {
         <p className="pageBody">
           We are lucky to be sponsored by a bridge enthusiast, who rewards
           regular members with $15 per meeting for attendance! Fill out the form
-          below at the beginning of each meetings TEST TEST TEST
+          below at the beginning of each meetings
         </p>
 
         {submitted ? (
