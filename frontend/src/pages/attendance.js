@@ -27,18 +27,45 @@ const Attendance = () => {
         // console.log(actualDay);
         // console.log(actualDay.getDay());
         // console.log(actualDay.getHours() < 13);
-        const response = await Axios.post(
-          "http://172.25.120.206:8000/api/log/",
+
+        // const response = await Axios.post(
+        //   "http://172.25.120.206:8000/api/log/",
+        //   {
+        //     firstName,
+        //     lastName,
+        //     computingID,
+        //   }
+        // );
+
+        const formData = `firstName=${encodeURIComponent(
+          firstName
+        )}&lastName=${encodeURIComponent(
+          lastName
+        )}&computingID=${encodeURIComponent(computingID)}`;
+        // Send the form data via fetch
+        fetch(
+          "https://script.google.com/macros/s/AKfycbziABRNgPmjMgbSXCLzpt4prnbAZmenYDnMfCI-qeZezyRYVyYnoD3N_QmMfr16McYb/exec",
           {
-            firstName,
-            lastName,
-            computingID,
+            method: "POST",
+            mode: "no-cors", // no-cors mode due to CORS limitations
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: formData,
           }
-        );
+        )
+          .then(() => {
+            console.log("Form data sent");
+            // Optionally reset the form fields
+            setFirstName("");
+            setLastName("");
+            setComputingID("");
+          })
+          .catch((error) => console.error("Error:", error));
 
         setSubmitted(true);
 
-        console.log("Data submitted successfully:", response.data);
+        // console.log("Data submitted successfully:", response.data);
         // alert(`Submission successful: ${response.data}`);
 
         setTimeout(() => setSubmitted(false), 3000);
